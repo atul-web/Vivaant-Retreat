@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rooms</title>
+<!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<!-- Responsive File -->
+<link href="css/responsive.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="new-img/favicon.png" type="image/x-icon">
+<link rel="icon" href="new-img/favicon.png" type="image/x-icon">
+
+<!-- Responsive Settings -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+
+<div class="page-wrapper">
+    <!-- Preloader -->
+    <div class="preloader"><div class="icon"></div></div>
+ <!-- Main Header -->
+    <header class="main-header header-style-one">
+
+        <!-- Header Upper -->
+        <div class="header-upper">
+            <div class="inner-container clearfix">
+                <!--Logo-->
+                <div class="logo-box">
+                    <div class="logo"><a href="index.html" title="Hotera - Hotel and Restaurant HTML Template"><img src="logo.png" alt="Hotera - Hotel and Restaurant HTML Template" title="Hotera - Hotel and Restaurant HTML Template"></a></div>
+                </div>
+                <div class="nav-outer clearfix">
+                    <!--Mobile Navigation Toggler-->
+                     <div class="mobile-nav-toggler"><span class="icon flaticon-menu-2"></span><span class="txt">Menu</span></div>
+
+                    <!-- Main Menu -->
+                    <nav class="main-menu navbar-expand-md navbar-light">
+                        <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                            <ul class="navigation clearfix">
+                                <li class="current dropdown"><a href="index.html">Home</a>
+                                </li>
+                                <li  class="dropdown"><a href="rooms-grid.html">Rooms</a>
+                                </li>
+                                <li><a href="about.html">Events</a></li>
+                                <li  class="dropdown"><a href="rooms-grid.html">Activity</a>
+                                </li>
+                                <li  class="dropdown"><a href="blog-grid.html">Offers</a>
+                                </li>
+                                <li><a href="contact.html">Testimonial</a></li>
+                                <li><a href="contact.html">Gallery</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="other-links clearfix">
+                    <div class="info">
+                        <ul class="clearfix">
+                            <li><a href="#"><span class="icon flaticon-padlock"></span><span class="txt">Login</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="link-box">
+                        <a href="room-single.html" class="theme-btn btn-style-one"><span class="btn-title">Book Your Stay</span></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--End Header Upper-->
+
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="close-btn"><span class="icon flaticon-targeting-cross"></span></div>
+            <div class="menu-backdrop"></div>
+            <div class="nav-logo"><a href="index.html"><img style="background-color: #fff;" src="logo.png" alt="" title=""></a></div>
+            <nav class="menu-box">
+                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+            </nav>
+            <div class="nav-bottom">
+                <div class="copyright"> All Right Reserved by <a href="">Hospitality Minds</a> </div>
+                <!--Social Links-->
+                <div class="social-links">
+                    <ul class="clearfix">
+                        <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                        <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                        <li><a href="#"><span class="fab fa-vimeo-v"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- End Mobile Menu -->
+
+    </header>
+    <!-- End Main Header -->
+
+
+    <!-- Banner Section -->
+    <section class="page-banner">
+        <div class="image-layer" style="background-image:url(new-img/banner/rooms.jpg);"></div>
+        <div class="banner-bottom-pattern"></div>
+
+        <div class="banner-inner">
+            <div class="auto-container">
+                <div class="inner-container clearfix">
+                    <h1>Our Rooms</h1>
+                    <div class="page-nav">
+                        <ul class="bread-crumb clearfix">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="active">Our Rooms</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Banner Section -->
+
+    <!--Rooms Section-->
+    <section class="rooms-section rooms-list">
+        <div class="auto-container">
+            <!--Filters Section-->
+            <div class="filters-section filters-container">
+                <div class="form-box default-form filter-form wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <form method="post" action="room-single.html">
+                        <div class="row clearfix">
+                            <div class="form-group col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                                <div class="field-label">Stay</div>
+                                <div class="field-inner">
+                                    <input id="arrival-date" class="date-picker" type="text" name="field-name" value="Nov 02. 2019" placeholder="">
+                                    <label for="arrival-date" class="icon flaticon-down-arrow"></label>
+                                </div>
+                            </div>
+                            <div class="form-group col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                                <div class="field-label">Room type</div>
+                                <div class="field-inner">
+                                    <select class="custom-select-box">
+                                        <option>Balcony Room</option>
+                                        <option>Deluxe Room</option>
+                                        <option>Superior Room</option>
+                                        <option>Luxury Room</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                                <div class="field-label">Guests</div>
+                                <div class="field-inner">
+                                    <div class="check-sel-box">
+                                        <div class="check-sel-btn">
+                                            <span class="adult-info">2 Adults.</span>
+                                            <span class="child-info">1 Children</span>
+                                        </div>
+                                        <ul class="check-sel-droplist">
+                                            <li>
+                                                <div class="sel-title">Select Adults:</div>
+                                                <div class="clearfix">
+                                                    <div class="radio-block adult-block"><input type="radio" name="adult-group" id="radio-1" value="1 Adults."><label for="radio-1">1</label></div>
+                                                    <div class="radio-block adult-block"><input type="radio" name="adult-group" id="radio-2" value="2 Adults." checked=""><label for="radio-2">2</label></div>
+                                                    <div class="radio-block adult-block"><input type="radio" name="adult-group" id="radio-3" value="3 Adults."><label for="radio-3">3</label></div>
+                                                    <div class="radio-block adult-block"><input type="radio" name="adult-group" id="radio-4" value="4 Adults."><label for="radio-4">4</label></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="sel-title">Select Children:</div>
+                                                <div class="clearfix">
+                                                    <div class="radio-block child-block"><input type="radio" name="child-group" id="radio-5" value="1 Children" checked=""><label for="radio-5">1</label></div>
+                                                    <div class="radio-block child-block"><input type="radio" name="child-group" id="radio-6" value="2 Children"><label for="radio-6">2</label></div>
+                                                    <div class="radio-block child-block"><input type="radio" name="child-group" id="radio-7" value="3 Children"><label for="radio-7">3</label></div>
+                                                    <div class="radio-block child-block"><input type="radio" name="child-group" id="radio-8" value="4 Children"><label for="radio-8">4</label></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                                <div class="field-label e-label">&nbsp;</div>
+                                <div class="field-inner">
+                                    <button class="theme-btn btn-style-one"><span class="btn-title">Start  Filter</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="rooms-box">
+                <!--Room-->
+                <div class="room-block-four wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="new-img/studio/1.jpg" alt="" title=""></figure>
+                            <div class="image-layer" style="background-image: url(new-img/studio/1.jpg);"></div>
+                            <a class="overlink" href=""></a>
+                        </div>
+                        <div class="content-box">
+                            <div class="rating">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <h4>STUDIO ROOM</h4>
+                            <div class="text">Studio Room is designed especially for couples who are looking for a perfect getaway in the center of nature and spending a quality time. The rooms are very comfortable and cozy perfect place to spend time with our loved ones.<br><br><b>Use Promocode: VIVAANT10 and get 10% off!</b>
+                            </div>
+                            <div class="link-row clearfix">
+                                <div class="pricing clearfix">
+                                    <div class="price">From <span>$50.00</span></div>
+                                </div>
+                                <div class="link-box"><a href="room-single.html" class="theme-btn btn-style-one"><span class="btn-title">Book Now</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Room-->
+                <div class="room-block-four wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="new-img/studio/6.jpg" alt="" title=""></figure>
+                            <div class="image-layer" style="background-image: url(new-img/studio/6.jpg);"></div>
+                            <a class="overlink" href="#"></a>
+                        </div>
+                        <div class="content-box">
+                            <div class="rating">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <h4>FAMILY ROOM</h4>
+                            <div class="text">Family rooms is for all the group travelers and family travelers. it will match all the expectations and comfortable. All rooms has balcony which offers garden view. Best room for group travelers.<br><br>
+                            <b>Use Promocode: VIVAANT10 and get 10% off!</b>
+                            </div>
+                            <div class="link-row clearfix">
+                                <div class="pricing clearfix">
+                                    <div class="price">From <span>$50.00</span></div>
+                                </div>
+                                <div class="link-box"><a href="room-single.html" class="theme-btn btn-style-one"><span class="btn-title">Book Now</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Room-->
+                <div class="room-block-four wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="new-img/studio/deluxe-quadruple.jpg" alt="" title=""></figure>
+                            <div class="image-layer" style="background-image: url(new-img/studio/deluxe-quadruple.jpg);"></div>
+                            <a class="overlink" href="room-single.html"></a>
+                        </div>
+                        <div class="content-box">
+                            <div class="rating">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <h4>DELUXE QUADRUPLE ROOM</h4>
+                            <div class="text">Deluxe quadruple rooms is for all the group travelers and family travelers. it will match all the expectations and comfortable. All rooms has balcony which offers garden view. Best room for group travelers.<br><br><b>Use Promocode: VIVAANT10 and get 10% off!</b></div>
+                            <div class="link-row clearfix">
+                                <div class="pricing clearfix">
+                                    <div class="price">From <span>$50.00</span></div>
+                                </div>
+                                <div class="link-box"><a href="room-single.html" class="theme-btn btn-style-one"><span class="btn-title">Book Now</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities -->
+    <section class="room-single">
+  <div class="auto-container">
+     <div class="details-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <div class="details-inner">
+                    <h3>Room Amenities</h3>
+                    <!-- <div class="text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sitvou ptatem accusantium doloremque laudantium.</div> -->
+                    <ul class="info clearfix">
+                        <li><span class="icon flaticon-tv"></span> Telivision</li>
+                        <li><span class="icon flaticon-wifi"></span> Wi-Fi</li>
+                        <li><span class="icon flaticon-coffee-cup"></span> Breakfast</li>
+                        <li><span class="icon flaticon-bathtub"></span> Bathtub</li>
+                        <li><span class="icon flaticon-tv"></span> TV</li>
+                        <li><span class="icon flaticon-house"></span> Housekeeping</li>
+                        <li><span class="icon flaticon-wine-glass"></span> Mini Bar</li>
+                        <li><span class="icon flaticon-dumbbell"></span> Gymnasium</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Amenities -->
+
+
+    <!-- policy section -->
+
+     <!--Menu Section-->
+    <section class="menu-section">
+        <div class="pattern-top"></div>
+        <span class="dotted-pattern dotted-pattern-13"></span>
+        <span class="tri-pattern tri-pattern-10"></span>
+        <div class="auto-container">
+            <div class="sec-title centered">
+                <h2>OUR POLICY</h2>
+                <!-- <div class="lower-text">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.</div> -->
+            </div>
+            <div class="menu-container">
+                <span class="dotted-pattern dotted-pattern-14"></span>
+                <div class="row clearfix">
+                    <!--Block-->
+                    <div class="menu-item col-lg-6 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="item-inner">
+                                <div class="item-price"><span><img style="height: 40px;" src="new-img/policy.png"></span></div>
+                                <h4>Policy 1.</h4>
+                                <div class="text">The standard check-in time is 12:00 PM</div>
+                            </div>
+                            <a href="package-single.html" class="over-link"></a>
+                        </div>
+                    </div>
+                    <!--Block-->
+                    <div class="menu-item col-lg-6 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="item-inner">
+                                 <div class="item-price"><span><img style="height: 40px;" src="new-img/policy.png"></span></div>
+                                <h4>Policy 2.</h4>
+                                <div class="text">The standard check-out time is 10:00 AM</div>
+                            </div>
+                            <a href="package-single.html" class="over-link"></a>
+                        </div>
+                    </div>
+                    <!--Block-->
+                    <div class="menu-item col-lg-6 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="item-inner">
+                                 <div class="item-price"><span><img style="height: 40px;" src="new-img/policy.png"></span></div>
+                                <h4>Policy 3.</h4>
+                                <div class="text"> Same day cancellation no refund at all.</div>
+                            </div>
+                            <a href="package-single.html" class="over-link"></a>
+                        </div>
+                    </div>
+                    <!--Block-->
+                    <div class="menu-item col-lg-6 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="item-inner">
+                                 <div class="item-price"><span><img style="height: 40px;" src="new-img/policy.png"></span></div>
+                                <h4>Policy 4.</h4>
+                                <div class="text"> Non - refundable Booking</div>
+                            </div>
+                            <a href="package-single.html" class="over-link"></a>
+                        </div>
+                    </div>
+                    <!--Block-->
+                    <div class="menu-item col-lg-6 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="item-inner">
+                                 <div class="item-price"><span><img style="height: 40px;" src="new-img/policy.png"></span></div>
+                                <h4>Policy 5.</h4>
+                                <div class="text"> Early check-in or late check-out is strictly subjected to availability and may be chargeable by the hotel.</div>
+                            </div>
+                            <a href="package-single.html" class="over-link"></a>
+                        </div>
+                    </div>
+                    <!--Block-->
+                    <div class="menu-item col-lg-6 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="item-inner">
+                                 <div class="item-price"><span><img style="height: 40px;" src="new-img/policy.png"></span></div>
+                                <h4>Policy 6.</h4>
+                                <div class="text"> No refund would be applicable in case the check-in is denied under such circumstances.</div>
+                            </div>
+                            <a href="package-single.html" class="over-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- policy section -->
+
+   <!-- Main Footer -->
+    <footer class="main-footer">
+        <div class="top-pattern-layer-dark"></div>
+        
+        <!--Widgets Section-->
+        <div class="widgets-section">
+            <div class="auto-container">
+                <div class="row clearfix">
+                    
+                    <!--Column-->
+                    <div class="column col-xl-3 col-lg-12 col-md-12 col-sm-12">
+                        <div class="footer-widget about-widget">
+                            <div class="logo" style="border-radius: 0%; margin-right: 70px; overflow: hidden; padding: 0px 0px 0px 60px; margin-top: 10px;">
+                                <a href="#">
+                                    <img style="background-color: white; width: 100%; height: 100%; object-fit: contain;" src="logo.png" alt="">
+                                </a>
+
+                            </div>
+                        </div>
+                        <ul class="info">
+                            <li class="address">Vivaant Retreat & Conventions,<br>Gut No,284/B,Opp Manas Resort,<br>Village Talegaon,Igatpuri,Dist Nashik</li>
+                            <li class="phone"><a href="tel:+91 8448449756">+91 8448449756</a></li>
+                             <li class="email"><a href="mailto:vivaantresort@gmail.com">vivaantresort@gmail.com</a></li>
+                            <li class="social-links">
+                                <a href="https://www.facebook.com/vivaantretreat/"><span class="fab fa-facebook-f"></span></a>
+                                <a href="https://www.instagram.com/vivaantretreatigatpuri/"><span class="fab fa-instagram"></span></a>
+                                <a href="#"><span class="fab fa-whatsapp"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!--Column-->
+                    <div class="column col-xl-5 col-lg-8 col-md-12 col-sm-12">
+                        <div class="footer-widget links-widget">
+                            <div class="widget-content">
+                                <div class="row clearfix">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="widget-title">
+                                            <h4>Quick Links</h4>
+                                        </div>
+                                        <ul class="links">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="rooms.html">Rooms</a></li>
+                                            <li><a href="event.html">Events</a></li>
+                                            <li><a href="activity.html">Activity</a></li>
+                                            <li><a href="offer.html">Offers</a></li>
+                                            <li><a href="testimonial.html">Testimonial</a></li>
+                                            <li><a href="galery.html">Gallery</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="widget-title">
+                                            <h4>Mumbai Sales Office</h4>
+                                        </div>
+                                        <ul class="info">
+                                            <li class="address">Unit No 130, 1st Floor,<br> F- Wing,Kamlesh Apartment, <br>Near PunjabExpress Restaurant, <br>Sher-E-Punjab CHS, Andheri East, <br>Mumbai - 400 093.</li>
+                                            <li class="phone"><a href="tel:+91 8448449756">8448449756</a></li>
+                                            <li class="phone"><a href="tel:+91 9821911134">9821911134</a></li>
+                                            <li class="phone"><a href="tel:+91 9137931014">9137931014</a></li>
+                                            <li class="phone"><a href="tel:+91 8976446866">8976446866</a></li>
+                                           
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Column-->
+                    <div class="column col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-widget newsletter-widget">
+                            <div class="widget-title">
+                                <h4>Our Location</h4>
+                            </div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60102.22916923557!2d73.4916619006318!3d19.69604221123553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdd844127aa4703%3A0x2c527eb1325db87!2sVivaant%20retreat%20and%20conventions!5e0!3m2!1sen!2sin!4v1682328262654!5m2!1sen!2sin" width="300" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="auto-container">
+                <div class="inner clearfix">
+                    <div class="copyright">&copy; All Right Reserved by <a class="hmwebsite" href="https://hospitalityminds.com/">Hospitality Minds </a> @2023</div>
+                    <div class="bottom-links">
+                        <a href="#">Terms of Service</a> &ensp;|&ensp; <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+</div>
+<!--End pagewrapper--><!--Scroll to top--><div class="scroll-to-top scroll-to-target" data-target="html"><span class="flaticon-up-arrow"></span></div>
+
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/scrollbar.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/custom-script.js"></script>
+
+</body>
+</html>
